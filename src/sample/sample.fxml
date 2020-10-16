@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="word" alignment="CENTER" layoutX="35.0" layoutY="174.0" prefHeight="53.0" prefWidth="542.0" text="d" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button onAction="#startButton" fx:id="start" layoutX="217.0" layoutY="159.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="179.0" text="Start" />
+      <Button onAction="#resetButton" fx:id="reset" layoutX="195.0" layoutY="284.0" mnemonicParsing="false" text="reset" visible="false" />
+      <Button onAction="#okButton" fx:id="ok" layoutX="364.0" layoutY="284.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="53.0" text="OK" visible="false" />
+      <ProgressIndicator fx:id="prgrs" layoutX="289.0" layoutY="274.0" progress="0.0" visible="false" />
+      <Label fx:id="atm" layoutX="18.0" layoutY="21.0" text="Attempts left : " visible="false" />
+      <Label fx:id="attempts" layoutX="119.0" layoutY="21.0" prefHeight="21.0" prefWidth="26.0" visible="false" />
+      <Label fx:id="rslt" alignment="CENTER" layoutX="117.0" layoutY="125.0" prefHeight="27.0" prefWidth="379.0" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField onAction="#okButton" fx:id="letter" layoutX="288.0" layoutY="234.0" prefHeight="31.0" prefWidth="36.0" visible="false" />
+   </children>
+</AnchorPane>
